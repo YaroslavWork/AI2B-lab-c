@@ -1,0 +1,25 @@
+<div class="buttonDiv">
+  <div class="describeDiv" *ngIf="people.length > 1">You have {{ people.length }} contacts</div>
+  <div class="describeDiv" *ngIf="people.length == 0">Contact List is empty</div>
+  <div class="describeDiv" *ngIf="people.length == 0">You have 1 contact</div>
+
+  <button class="addButton" [routerLink]="['/add']">Add Contact</button>
+</div>
+
+<table>
+  <tr>
+    <th>Index</th>
+    <th>Value</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let person of people; let i = index">
+    <td>{{i}}</td>
+    <td>{{person.firstName}} {{person.lastName}}</td>
+    <td>
+      <div class="buttonDiv">
+        <button class="detailButton" [routerLink]="['/details', i]">Details</button>
+        <button class="deleteButton" (click)="delete(i)">Remove</button>
+      </div>
+    </td>
+  </tr>
+</table>

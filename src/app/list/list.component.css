@@ -1,0 +1,65 @@
+.describeDiv{
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button.detailButton{
+  background-color: #b6710a;
+}
+
+button.addButton{
+  background-color: #0ab632;
+}
+
+button.deleteButton {
+  background-color: #fe424e;
+}
+
+button.detailButton:hover {
+  background-color: #9a6004;
+}
+
+button.addButton:hover {
+  background-color: #039627;
+}
+
+button.deleteButton:hover {
+  background-color: #c51d28;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+tr {  border-bottom: 1px solid #ddd;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
